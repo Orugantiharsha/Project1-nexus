@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <style>
+    body{
+    background-image: url(forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: -1%;
+   }
+  h2{
+    color:white;
+  }
+  p{
+    color:white;
+  }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg"  height: 50px;">
+        <div class="container-fluid">
+          
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="home.html" href="#" style="font-size: 24px; color:#FFFFE0" data-bs-toggle="tooltip"><i class="fa fa-home" aria-hidden="true"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label for="newfirstname">Firstname:</label>
+      <input type="text" id="newUsername" name="newfirstname" required><br>
+      <label for="newlastname">Lastname:</label>
+      <input type="text" id="newLastname" name="newlastname" required><br>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername" required><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword" required><br>
+      <label for="Confirm">Confirm Password:</label>
+      <input type="text" id="confirmpassword" name="Confirm" required><br><br>
+      <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  <script>
+    function validateForm() {
+      var password = document.getElementById("newPassword").value;
+      var confirmPassword = document.getElementById("confirmpassword").value;
+
+      if (password !== confirmPassword) {
+        document.getElementById("passwordError").innerText = "Passwords do not match.";
+        return false;
+      } else {
+        document.getElementById("passwordError").innerText = "";
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Website Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      padding: 0;
+      background-image: url(home.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+width: -200px;
+      margin-bottom: 1px;
+      margin-top: 0;
+      margin-left: 20px;
+  
+    }
+    header { 
+      color:black;
+      padding: 10px;
+      text-align: center;
+      
+    }
+    
+section {
+  
+      background-color:white;
+      font-size: 20px;
+      padding: 10px; 
+      text-align: center;
+      margin: 50px;
+      color:black; 
+      border-radius: 8px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 180px; 
+      margin-right: 210px;
+      backdrop-filter: blur(10px); 
+}
+    
+  footer {
+
+      color: black;
+      text-align: center;
+      padding: 10px;
+      position:relative;
+      bottom: 30px;
+      top: px;
+      width: 100%;
+      margin-bottom: 200px;
+    }
+    nav {
+      display:flex;
+      justify-content:space-around;
+      align-items: center;
+      padding: 4px;
+      margin: 2px;
+     
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+    @media screen and (max-width: 360px) {
+    .navbar{
+    width: 300px;
+    }
+    .container{
+      margin: 300px;
+      height: max-content;
+      width: 300px;
+      margin-left: 1000px;
+
+    }
+  }
+  @media screen and (max-width:320px) {
+    .footer{
+     bottom: 100px;
+    }
+    
+  }
+    @media screen and (min-width: 768px) {
+      .navbar{
+        max-width:-400px;
+      }
+    .container {
+      width: 40%;
+      height:3px;
+      background-size: cover;
+      margin: 5px;
+      margin-left: 210px;
+      padding: auto;
+      margin-bottom: 100px;
+    
+    }
+    .footer{
+      margin-bottom: 800px;
+    }
+  }
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 40%; 
+    height: 100%;
+    background-size: cover;
+  }
+  footer {
+    margin: 5px; 
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to our Website</h1>
+    <nav>
+<a href="#" style="font-size: 26px; color: black" data-bs-toggle="tooltip"><i class="fa fa-home" aria-hidden="true"></i></a>
+<a href="login.html" style="font-size: 24px;  margin-left: 800px;color: #FFFFE0;"><button style="background-color:black; color: white; padding: 6px; box-shadow: 0 4px 6px rgba(9, 241, 109, 0.1); border: none; border-radius: 4px; font-size: 15px;">login</button></a>
+<a href="signup.html" style="font-size: 24px;color:#FFFFE0;"><button style="background-color:black; color: white; padding: 6px; box-shadow: 0 4px 6px rgba(9, 241, 109, 0.1); border: none; border-radius: 4px; font-size: 15px;">signup</button></a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>Welcome to our Front-End Login and Signup Page!<br> This page is created to make it super easy for you to create an account and log in.<br> We want the whole process to be straightforward and user-friendly, all while looking good and stylish.</p><br>
+    <h2>Call to Action</h2>
+    <p>Ready to get started? <a href="signup.html">Sign up now!</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; our new Website @2024. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
